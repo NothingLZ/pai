@@ -79,7 +79,7 @@ RUN apt-get -y install apt-transport-https &&  \
     apt-get -y update && \
     apt-get -y install azure-cli
 
-RUN wget https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
+RUN wget https://storage.googleapis.com/kubernetes-release/release/v1.12.2/bin/linux/amd64/kubectl
 RUN chmod +x kubectl
 RUN mv kubectl /usr/local/bin
 
